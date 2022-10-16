@@ -1,7 +1,15 @@
 - 👋 Hi, I’m @SenyuanLiu
 - Here I upload all my school work!  
 
-<!---
-SenyuanLiu/SenyuanLiu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- MAT 259: Data Visualization   Implemented by Python, SQL, Processing(JAVA based)
+
+  Inside this folder, you will find my three projects on data visualization
+    - Project 1 is about Performance Cars and Seatle Library Checkouts. 
+    - Porject 2 is about Tesla Stock price and Seatle Library Checkouts 
+    - Project 3 is about Temperature Movement 
+    
+    You can view the three html links of specific overview of porjects and codes inside the corresponding folder
+    
+ - MATH 104C: Advanced Numerical Analysis     Implemented by Python
+ 
+    Inside this folder, you will find my final project on a Cellar problem regarding to numerical analysis
