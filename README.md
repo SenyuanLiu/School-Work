@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @SenyuanLiu
-- Here I upload all my work!  
+- Here I upload all my school work!  
 
 <!---
 SenyuanLiu/SenyuanLiu is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
