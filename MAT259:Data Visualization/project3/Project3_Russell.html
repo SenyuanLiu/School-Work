@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+    <HEAD>
+        <TITLE>Project Description</TITLE>
+        <link rel="stylesheet" type="text/css" media="all" href="../../newTemplate.css" /> 
+    </HEAD>
+
+    <BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+        <div id="wrap">
+    	    <div class="left_column"></div>
+
+            <!-- Replace to your own title below -->
+    	    <div class="right_column"><strong><span class="style4">Temperature Movement Visualization</span><br></strong></div>
+            
+            <div class="line"></div>
+            <div class="left_column"><strong>MAT 259, 2022</strong></div>
+
+            <!-- Replace to your name below -->
+            <div class="right_column"><strong>Senyuan(Russell) Liu</strong></div>
+            
+            <div class="line"><hr noshade size="1"></div> 
+            
+            <!-- Concept Section -->
+            <div class="left_column"><strong>Concept</strong></div>
+            <div class="right_column">
+                I will focus on the air temperature of 28 cities in the United States. I acquire the air temperature data (which is updated every 1 hour) and city data from 2012 to 2017, from Kaggle https://www.kaggle.com/selfishgene/hist ... /version/2
+There will be three axes, respectively representing longitude, latitude, and air temperature. Each dots represent a city and it moves up and down along with the numerical value of the temperature.<br>
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+        
+            <div class="left_column"><strong>Query</strong></div>
+            <div class="right_column">
+                Data source: https://www.kaggle.com/selfishgene/historical-hourly-weather-data/version/2
+            </div>
+            <div class="line"><hr noshade size="1"></div>
+
+            <!-- Sketches Section -->
+            <div class="left_column"><strong>Preliminary sketch</strong></div>
+            <div class="right_column">
+                Air temperature is updated hourly from 2012 to 2017. <br><br>    
+                <img src="sketch1.png" width="500"/><br><br>
+                Each cities' latitude and longitude. <br><br>   
+                <img src="sketch7.png" width="500"/><br><br> 
+                Priliminary sketch:  <br><br>   
+                <img src="sketch3.png" width="500"/><br><br>    
+                Each cities' latitude and longitude. <br><br>   
+                <img src="sketch4.png" width="500"/><br><br>          
+            </div>
+            <div class="line"><hr noshade size="1"></div>
+        
+            <!-- Process Section -->
+            <div class="left_column"><strong>Process</strong></div>
+            <div class="right_column">    
+                For the work-in-progress visualization, I only show the movement without presenting the change of the temperature by using color. <br><br>
+                <img src="sketch5.png" width="500"/><br><br>
+                <img src="sketch6.png" width="500"/><br><br>
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+            
+             <!-- Final Section -->
+            <div class="left_column"><strong>Final result</strong></div>
+            <div class="right_column">
+                <strong>Video Documentation</strong>
+                <br/><br/>
+                Here I upload my final movement visualization in Youtube. <br><br>
+                There are two modes for this visualizations, one is hourly air temperature movement and the other one is daily average temperature movement. You can simply click anywhere on the screen to switch the mode, and the mode shows on the upper left of the screen. Regarding the speed of the movement, you could justify it by moving your mousing near the slider area and dragging it without any click. To the very left of the slide, that would be the fastest speed and the opposite is the slowest. The time of the current movement is shown beside the slider as well. Also, I mark the current value of temperature along with the name of the city on each dot. Regarding the color, I use ColorMode() and HSB instead of stroke(), background(), etc. The brightness of the color is corresponding to the numerical value of the temperature. If the city's temperature is high, its color would be very light and red, and oppositely, it would be green. You could tell the difference in the temperature among cities.<br><br>
+                <br/><br/>
+                please watch the YouTube video:
+
+                <iframe width="650" height="450" src="https://www.youtube.com/embed/WZu94kk-t1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </iframe>
+                <br/><br/>    
+                Here are some screenshots. <br><br>
+                <img src="final1.png" width="500"/><br><br>
+                <img src="final2.png" width="500"/><br><br>
+                <img src="final3.png" width="500"/><br><br>
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+            
+             <!-- Source Code Section -->
+            <div class="left_column"><strong>Code</strong></div>
+            <div class="right_column">
+                All work is developed within Processing<br>
+                <!-- Please put the link of the source code and data below -->
+                <a href="TempDataVis.zip">Source Code + Data</a><br><br>    
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+        </div><!--END WRAP-->
+    </BODY>
+</HTML>
