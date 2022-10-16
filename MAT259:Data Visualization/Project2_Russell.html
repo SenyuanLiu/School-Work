@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+    <HEAD>
+        <TITLE>Project Description</TITLE>
+        <link rel="stylesheet" type="text/css" media="all" href="../../newTemplate.css" /> 
+    </HEAD>
+
+    <BODY bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+        <div id="wrap">
+    	    <div class="left_column"></div>
+
+            <!-- Replace to your own title below -->
+    	    <div class="right_column"><strong><span class="style4">Checkouts and Tesla Stock Price</span><br></strong></div>
+            
+            <div class="line"></div>
+            <div class="left_column"><strong>MAT 259, 2022</strong></div>
+
+            <!-- Replace to your name below -->
+            <div class="right_column"><strong>Senyuan(Russell) Liu</strong></div>
+            
+            <div class="line"><hr noshade size="1"></div> 
+            
+            <!-- Concept Section -->
+            <div class="left_column"><strong>Concept</strong></div>
+            <div class="right_column">
+                My project 2 is focused on visualizing the correlation between Tesla's Stock Price (from 2011 to 2021) and Checkouts from Seatle Public Library in 3D, realizing in Processing. By doing so, I would like to find out if people are borrowing more/less related books as Tesla's Stock Price increases/decreases in a time period. I only fetched the stock data started in 2011 because it wasn't a public company via IPO on NASDAQ until 2010 June, and thus fetching checkouts data starting in 2011.<br>
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+        
+            <div class="left_column"><strong>Query1</strong></div>
+            <div class="right_column">
+                select *<br><br>
+                from spl_2016.outraw<br><br>
+                where (<br><br>
+                LOWER(title) like '% Elon Musk %'<br><br>
+                or LOWER(title) like '% Tesla %'<br><br>
+                or LOWER(title) like '% Panasonic %'<br><br>
+                or LOWER(title) like '% Lithium Iron Phosphate %'<br><br>
+                or LOWER(title) like '% Battery %'<br><br>
+                or LOWER(title) like '% stock %'<br><br>
+                or LOWER(title) like '% stock market %'<br><br>
+                or LOWER(title) like '% investment %'<br><br>
+                )AND YEAR(cout) BETWEEN 2010 AND 2021<br><br>
+            </div>
+            <div class="line"><hr noshade size="1"></div>
+            <div class="left_column"><strong>Query2</strong></div>
+            <div class="right_column">
+                SELECT YEAR<br><br>
+                ( cout ),<br><br>
+                title,<br><br>
+                COUNT( 1 )  'checkouts'<br><br>
+                FROM<br><br>
+                spl_2016.outraw <br><br>
+                WHERE<br><br>
+                ( INSTR( title, 'stock market' )> 0 OR INSTR( title, 'Tesla' )> 0 OR INSTR( title, 'Elon Musk' )> 0 OR <br><br>
+                INSTR( title, 'investment' )> 0 OR INSTR( title, 'Battery' )> 0 OR INSTR( title, 'stock' )> 0) <br><br>
+                AND YEAR ( cout ) BETWEEN 2010 <br><br>
+                AND 2021 <br><br>
+                GROUP BY<br><br>
+                YEAR ( cout ),<br><br>
+                title<br><br>
+ 
+            
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+
+            <!-- Sketches Section -->
+            <div class="left_column"><strong>Preliminary sketches</strong></div>
+            <div class="right_column">
+                <br><br>    
+                <img src="sketch1.png" width="500"/><br><br>
+                <img src="sketch2.png" width="500"/><br><br>     
+            </div>
+            <div class="line"><hr noshade size="1"></div>
+        
+            <!-- Process Section -->
+            <div class="left_column"><strong>Process</strong></div>
+            <div class="right_column">    
+                The X, Y, and Z-axis represent Year, Tesla Stock Price, and Checkouts respectively. I plotted each book, represented as a small sphere; and they are different in size and color. As the checkouts go up, the size of the small sphere will increase as well. The few they were borrowed, the smaller the sphere. Each Year in the X-axis represents a color and I have listed it on the left. I made a small box, which functions like a button that could rotate the box in a convenient way. The box has two motions, one is moving, and the other one is static. Once you click the button, the sphere will be moving or become static if do it again. Besides, you could search one specific book which includes some keywords related to Tesla and Elon Musk, and you will see all the related small spheres shown in the visualization, and thus you could move your mouse to the sphere to check the information such as the stock price on that day, number of checkouts, book title, and Year. If you would like to see the general situation in one certain year, you could just click the year on the X-axis and it will only show the small spheres in this year and blur the others.<br><br>
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+            
+             <!-- Final Section -->
+            <div class="left_column"><strong>Final result</strong></div>
+            <div class="right_column">    
+                Moving motion.<br><br>
+                <img src="sketch3 copy.png" width="500"/><br><br>
+                Static motion<br><br>
+                <img src="sketch4 copy.png" width="500"/><br><br>
+                <img src="sketch5 copy.png" width="500"/><br><br>
+                <img src="sketch6 copy.png" width="500"/><br><br>
+                Select Year 2014-2015<br><br>
+                <img src="sketch7 copy.png" width="500"/><br><br>
+                Search books with key word "elon musk"<br><br>
+                <img src="sketch8 copy.png" width="500"/><br><br>
+                Click one particle and it will show the details of the book in the upper left<br><br>
+                <img src="sketch9 copy.png" width="500"/><br><br>
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+            
+             <!-- Source Code Section -->
+            <div class="left_column"><strong>Code</strong></div>
+            <div class="right_column">
+                All work is developed within Processing<br>
+                <!-- Please put the link of the source code and data below -->
+                <a href="TeslaStockCheckouts.zip">Source Code + Data</a><br><br>    
+            </div>
+            <div class="line"><hr noshade size="1"></div> 
+        </div><!--END WRAP-->
+    </BODY>
+</HTML>
