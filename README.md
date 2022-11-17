@@ -7,6 +7,7 @@
     - Project 1 is about Performance Cars and Seatle Library Checkouts. 
     - Porject 2 is about Tesla Stock price and Seatle Library Checkouts 
     - Project 3 is about Temperature Movement 
+    I have uploaded project 3 to YouTube: https://youtu.be/WZu94kk-t1Y
     
     You can view the three html links of specific overview of porjects and codes inside the corresponding folder
     
