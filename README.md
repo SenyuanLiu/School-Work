@@ -14,3 +14,7 @@
  - MATH 104C: Advanced Numerical Analysis     Implemented by Python
  
     Inside this folder, you will find my final project on a Cellar problem regarding to numerical analysis
+
+ - PSTAT 131:Satistical Machine Learning     Implemented by R-Studio
+ 
+    This paper will establish an appropriate model to predict whether mushrooms are poisonous according to their characteristics. It is very important for us to know which features in the mushroom feature data set will lead to death and which features are suitable for eating.
